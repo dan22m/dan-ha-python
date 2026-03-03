@@ -1,5 +1,5 @@
 {
-  "domain": "my_integration",
+  "domain": "dan-hacs-python-manager",
   "name": "Dan HACS python manager",
   "codeowners": [
     "@dan22m"
