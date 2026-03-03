@@ -1,4 +1,4 @@
-"""Websocket API for HACS Template."""
+"""Websocket API for Dan HACS python manager."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from .const import DOMAIN
 
 @websocket_api.websocket_command(
     {
-        vol.Required("type"): "hacs_template/get_state",
+        vol.Required("type"): "my_integration/get_state",
         vol.Required("entry_id"): str,
     }
 )
@@ -35,7 +35,7 @@ async def ws_get_state(
 
 @websocket_api.websocket_command(
     {
-        vol.Required("type"): "hacs_template/set_counter",
+        vol.Required("type"): "my_integration/set_counter",
         vol.Required("entry_id"): str,
         vol.Required("value"): vol.Coerce(int),
     }
@@ -56,7 +56,7 @@ async def ws_set_counter(
     connection.send_result(msg["id"], {"entry_id": entry_id, "counter": state.counter})
 
 
-@websocket_api.websocket_command({vol.Required("type"): "hacs_template/list_entries"})
+@websocket_api.websocket_command({vol.Required("type"): "my_integration/list_entries"})
 @websocket_api.async_response
 async def ws_list_entries(
     hass: HomeAssistant,

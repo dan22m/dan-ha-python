@@ -1,4 +1,4 @@
-"""API layer for HACS Template.
+"""API layer for Dan HACS python manager.
 
 Patterns included:
 - aiohttp session injection via HA's shared session

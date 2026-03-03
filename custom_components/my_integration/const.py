@@ -1,10 +1,10 @@
-"""Constants for HACS Template integration."""
+"""Constants for Dan HACS python manager integration."""
 
 from __future__ import annotations
 
 from homeassistant.const import Platform
 
-DOMAIN = "hacs_template"
+DOMAIN = "my_integration"
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
 
@@ -12,7 +12,7 @@ CONF_NAME = "name"
 CONF_HOST = "host"
 CONF_API_KEY = "api_key"
 
-DEFAULT_NAME = "HACS Template"
+DEFAULT_NAME = "Dan HACS python manager"
 DEFAULT_HOST = ""
 DEFAULT_API_KEY = ""
 

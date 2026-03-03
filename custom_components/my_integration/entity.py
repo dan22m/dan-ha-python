@@ -1,4 +1,4 @@
-"""Entity helpers for HACS Template."""
+"""Entity helpers for Dan HACS python manager."""
 
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ def device_info_from_entry(entry) -> DeviceInfo:
         identifiers=identifiers,
         name=str(name),
         manufacturer="Template",
-        model="HACS Template Integration",
+        model="Dan HACS python manager Integration",
         configuration_url=f"http://{host}" if host else None,
     )
 

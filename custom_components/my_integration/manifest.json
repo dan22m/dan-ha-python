@@ -1,0 +1,17 @@
+{
+  "domain": "my_integration",
+  "name": "Dan HACS python manager",
+  "codeowners": [
+    "@dan22m"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/dan22m/dan-hacs-python-manager",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/dan22m/dan-hacs-python-manager/issues",
+  "loggers": [
+    "custom_components.dan-hacs-python-manager"
+  ],
+  "requirements": ["flask","psutil"],
+  "version": "0.1.0"
+}

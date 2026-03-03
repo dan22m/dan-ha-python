@@ -17,7 +17,7 @@ class HacsTemplateCard extends HTMLElement {
   render() {
     const entryId = this._config?.entry_id || "(missing entry_id)";
     this.innerHTML = `
-      <ha-card header="HACS Template Card">
+      <ha-card header="Dan HACS python manager Card">
         <div style="padding: 12px">
           <div><b>entry_id:</b> ${entryId}</div>
           <div style="margin-top: 8px; color: var(--secondary-text-color)">

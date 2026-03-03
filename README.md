@@ -41,7 +41,7 @@ flowchart LR
 3. Rename the template:
 
 ```bash
-python3 scripts/rename_domain.py --old hacs_template --new my_integration --name "My Integration" --repo yourname/my_integration --codeowner "@yourhandle"
+python3 scripts/rename_domain.py --old my_integration --new my_integration --name "My Integration" --repo yourname/my_integration --codeowner "@yourhandle"
 ```
 
 4. Update URLs + ownership in `custom_components/<domain>/manifest.json` and `hacs.json`.
@@ -50,7 +50,7 @@ python3 scripts/rename_domain.py --old hacs_template --new my_integration --name
 ## Repo Layout
 
 ```text
-custom_components/hacs_template/   Integration code (rename this folder)
+custom_components/my_integration/   Integration code (rename this folder)
 docs/                             Extra documentation + workflow templates
 scripts/                          Validation, rename, release helpers
 hacs.json                          HACS metadata

@@ -11,9 +11,9 @@ python3 -m compileall -q custom_components scripts
 
 echo "[2/6] Basic structure checks"
 test -f hacs.json
-test -f custom_components/hacs_template/manifest.json
-test -f custom_components/hacs_template/strings.json
-test -f custom_components/hacs_template/translations/en.json
+test -f custom_components/my_integration/manifest.json
+test -f custom_components/my_integration/strings.json
+test -f custom_components/my_integration/translations/en.json
 test -f icon.png
 test -f logo.png
 test -f dark_icon.png
@@ -31,8 +31,8 @@ python3 - <<'PY'
 import json
 from pathlib import Path
 
-manifest = json.loads(Path("custom_components/hacs_template/manifest.json").read_text(encoding="utf-8"))
-assert manifest.get("domain") == "hacs_template", "manifest domain mismatch"
+manifest = json.loads(Path("custom_components/my_integration/manifest.json").read_text(encoding="utf-8"))
+assert manifest.get("domain") == "my_integration", "manifest domain mismatch"
 assert str(manifest.get("version","")).strip(), "manifest version missing"
 print("manifest ok:", manifest["version"])
 PY

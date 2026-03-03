@@ -1,4 +1,4 @@
-"""Config flow for HACS Template."""
+"""Config flow for Dan HACS python manager."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ from .const import CONF_API_KEY, CONF_HOST, CONF_NAME, DEFAULT_API_KEY, DEFAULT_
 
 
 class HacsTemplateConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for HACS Template."""
+    """Handle a config flow for Dan HACS python manager."""
 
     VERSION = 2
 
@@ -74,7 +74,7 @@ class HacsTemplateConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
 
 class HacsTemplateOptionsFlow(config_entries.OptionsFlow):
-    """Handle options for HACS Template."""
+    """Handle options for Dan HACS python manager."""
 
     def __init__(self, config_entry) -> None:
         self.config_entry = config_entry

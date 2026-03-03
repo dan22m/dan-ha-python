@@ -2,9 +2,8 @@
   "name": "Dan HACS python manager",
   "content_in_root": false,
   "domains": [
-    "dan-HACS-python-manager"
+    "dan-hacs-python-manager"
   ],
   "homeassistant": "2026.2.3",
   "render_readme": true
 }
-

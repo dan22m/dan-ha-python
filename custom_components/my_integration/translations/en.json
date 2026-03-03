@@ -1,9 +1,9 @@
 {
-  "title": "HACS Template",
+  "title": "Dan HACS python manager",
   "config": {
     "step": {
       "user": {
-        "title": "Set up HACS Template",
+        "title": "Set up Dan HACS python manager",
         "description": "Example integration template with storage, services, and a sensor.",
         "data": {
           "name": "Name",

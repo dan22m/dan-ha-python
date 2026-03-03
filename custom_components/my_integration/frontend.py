@@ -12,7 +12,7 @@ from homeassistant.components.frontend import add_extra_js_url
 from homeassistant.components.http import StaticPathConfig
 from homeassistant.core import HomeAssistant
 
-CARD_STATIC_URL = "/hacs_template_files/hacs-template-card.js"
+CARD_STATIC_URL = "/my_integration_files/hacs-template-card.js"
 
 
 async def async_register_frontend(hass: HomeAssistant) -> None:

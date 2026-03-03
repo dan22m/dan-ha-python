@@ -1,4 +1,4 @@
-"""Coordinator for HACS Template."""
+"""Coordinator for Dan HACS python manager."""
 
 from __future__ import annotations
 
@@ -30,7 +30,7 @@ class HacsTemplateCoordinator(DataUpdateCoordinator[StoredState]):
         super().__init__(
             hass,
             logger=_LOGGER,
-            name=f"hacs_template_{entry.entry_id}",
+            name=f"my_integration_{entry.entry_id}",
             update_interval=timedelta(minutes=30),
         )
 

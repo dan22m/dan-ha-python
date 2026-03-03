@@ -1,4 +1,4 @@
-"""Persistent storage for HACS Template.
+"""Persistent storage for Dan HACS python manager.
 
 Use this as your "database" for small-to-medium payloads stored in HA .storage.
 

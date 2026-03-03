@@ -1,4 +1,4 @@
-"""HACS Template integration."""
+"""Dan HACS python manager integration."""
 
 from __future__ import annotations
 

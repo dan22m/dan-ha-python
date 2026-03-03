@@ -1,4 +1,4 @@
-"""Sensor platform for HACS Template."""
+"""Sensor platform for Dan HACS python manager."""
 
 from __future__ import annotations
 

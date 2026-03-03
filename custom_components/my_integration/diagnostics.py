@@ -1,4 +1,4 @@
-"""Diagnostics support for HACS Template.
+"""Diagnostics support for Dan HACS python manager.
 
 This file is picked up by Home Assistant automatically when present.
 """
